@@ -9,6 +9,7 @@ process rampart {
     path fastq_ch
 
   output:
+    path annotations
 
   script:
     extra = ""
