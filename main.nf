@@ -9,8 +9,6 @@ process rampart {
     path fastq_ch
 
   output:
-    path "squirrel_output/${fasta.baseName}.aln.fasta"
-    path "squirrel_output/**"
 
   script:
     extra = ""
@@ -25,7 +23,7 @@ process rampart {
 
 workflow {
   fastq_ch = channel.fromPath("${params.fastq}", checkIfExists:true)
-  protocol_ch = channel.fromPath("${launchDir}/protocols/${params.protocol}", checkIfExists:true)
+  protocol_ch = channel.fromPath("${projectDir}/protocols/${params.protocol}", checkIfExists:true)
 
   
   rampart(protocol_ch, fastq_ch)
