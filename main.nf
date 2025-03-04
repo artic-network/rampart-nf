@@ -2,7 +2,7 @@ process rampart {
 
   container "${params.wf.container}:${workflow.manifest.version}"
   
-  publishDir "${params.out_dir}", mode: 'copy'}
+  publishDir "${params.out_dir}", mode: 'copy'
 
   input:
     path protocol
