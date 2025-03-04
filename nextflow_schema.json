@@ -23,7 +23,7 @@
           "type": "string",
           "title": "Protocol",
           "enum": [
-            "mpxv"
+            "MPXV"
           ],
 
           "description": "Specify the path to the organism protocols.",
