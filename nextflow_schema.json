@@ -14,7 +14,7 @@
       "properties": {
         "fastq": {
           "type": "string",
-          "format": "file-path",
+          "format": "path",
           "title": "FASTQ",
           "description": "Basecalled directory of FASTQ files",
           "help_text": "Usually fastq_pass within the ONT run directory"
