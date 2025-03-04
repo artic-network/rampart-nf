@@ -25,7 +25,7 @@ process rampart {
 
 workflow {
   fastq_ch = channel.fromPath("${params.fastq}", checkIfExists:true)
-  protocol_ch = channel.fromPath("${params.protocol}", checkIfExists:true)
+  protocol_ch = channel.fromPath("${launchDir}/protocols/${params.protocol}", checkIfExists:true)
 
   
   rampart(protocol_ch, fastq_ch)
