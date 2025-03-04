@@ -12,8 +12,6 @@ process rampart {
 
   script:
     extra = ""
-    if ( params.barcodes )
-            extra += " --barcodes ${params.barcodes}"
     if ( params.extra_flags )
             extra += " ${params.extra_flags}"
     """
