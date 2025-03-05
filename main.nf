@@ -1,6 +1,6 @@
 process rampart {
 
-  container "${params.wf.container}:${workflow.manifest.version}"
+  container "${params.wf.container}:1.2.2b"
   
   publishDir "${params.out_dir}", mode: 'copy'
 
