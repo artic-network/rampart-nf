@@ -19,6 +19,14 @@
           "description": "Basecalled directory of FASTQ files",
           "help_text": "Usually fastq_pass within the ONT run directory"
         },
+        "barcodes_csv": {
+          "type": "string",
+          "format": "file-path",
+          "title": "Barcodes CSV",
+          "description": "A CSV file specifying names associated with each barcode",
+          "help_text": ""
+
+        },
         "protocol": {
           "type": "string",
           "title": "Protocol",
