@@ -29,7 +29,7 @@ workflow {
   if (params.barcodes_csv)
     barcodes_ch = channel.fromPath("${params.barcodes_csv}", checkIfExists:true)
   else
-    barcodes_ch = channel.fromPath("${params.default_barcodes_csv}", checkIfExists:true)
+    barcodes_ch = channel.fromPath(""${projectDir}/${params.default_barcodes_csv}", checkIfExists:true)
 
   
   rampart(protocol_ch, fastq_ch, barcodes_ch)
