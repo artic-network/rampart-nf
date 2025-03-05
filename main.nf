@@ -7,14 +7,17 @@ process rampart {
   input:
     path protocol
     path fastq_ch
+    path barcodes_ch
 
   output:
     path annotations
 
   script:
     extra = ""
+    if ( params.barcodes_csv )
+        extra += " --barcodes ${barcodes_ch}"
     if ( params.extra_flags )
-            extra += " ${params.extra_flags}"
+        extra += " ${params.extra_flags}"
     """
     rampart --protocol ${protocol} --basecalledPath ${fastq_ch}  --clearAnnotated ${extra}
     """
@@ -23,7 +26,11 @@ process rampart {
 workflow {
   fastq_ch = channel.fromPath("${params.fastq}", checkIfExists:true)
   protocol_ch = channel.fromPath("${projectDir}/protocols/${params.protocol}", checkIfExists:true)
+  if (params.barcodes_csv)
+    barcodes_ch = channel.fromPath("${params.barcodes_csv}", checkIfExists:true)
+  else
+    barcodes_ch = channel.fromPath("${params.default_barcodes_csv}", checkIfExists:true)
 
   
-  rampart(protocol_ch, fastq_ch)
+  rampart(protocol_ch, fastq_ch, barcodes_ch)
 }
