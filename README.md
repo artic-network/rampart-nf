@@ -22,5 +22,5 @@ This workflow is intended to be run using the
 
 This pipeline was developed by Rachel Colquhoun.
 The ARTIC RAMPART application was developed by James Hadfield, Andrew Rambaut, Áine O'Toole, Rachel Colquhoun.
-The RAMPART Docker container was developed by Corey Ainsley and Danny Maloney.
+The RAMPART Docker container was developed by Emily Scher, Corey Ainsley and Danny Maloney.
 
