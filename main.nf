@@ -15,7 +15,7 @@ process rampart {
   script:
     extra = ""
     if ( params.barcodes_csv )
-        extra += " --barcodes ${barcodes_ch}"
+        extra += " --barcodeNames ${barcodes_ch}"
     if ( params.extra_flags )
         extra += " ${params.extra_flags}"
     """
