@@ -16,7 +16,10 @@ from desktop application rather than the command line.
 ## Install and run
 
 This workflow is intended to be run using the
-[EPI2ME Desktop application](https://labs.epi2me.io/downloads/) by Oxford Nanopore Technologies.
+[EPI2ME Desktop application](https://labs.epi2me.io/downloads/) by Oxford Nanopore Technologies. 
+Install by selecting `> Launch` -> `Install workflow` -> `Import from Github` and provide the link to this Github repository: 
+[https://github.com/artic-network/rampart-nf](https://github.com/artic-network/rampart-nf). 
+Do not include a `/` or other folder names at the end of the URL or it may not install.
 
 ## Credits / Acknowledgements
 
