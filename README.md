@@ -8,7 +8,7 @@ Open a browser to [http://localhost:3000](http://localhost:3000) to view the RAM
 
 ## Introduction
 
-The rampart-nf workflow implements simple NextFlow workflow to start the RAMPART real-time
+The [rampart-nf workflow](https://github.com/artic-network/rampart-nf) implements simple NextFlow workflow to start the RAMPART real-time
 sequencing analysis platform. This allows it to be run using the ONT Epi2Me workflow application
 from desktop application rather than the command line.
 
