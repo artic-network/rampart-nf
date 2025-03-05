@@ -1,5 +1,5 @@
 ![logo-banner-website](https://github.com/user-attachments/assets/92577b6c-d1b4-4364-888c-6dfb459177ed)
-# Artic Network RAMPART NextFlow wrapper
+# Artic Network RAMPART real-time nanopore analysis
 
 
 Run the ARTIC RAMPART real-time nanopore analysis application from within Epi2Me or NextFlow
