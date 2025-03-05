@@ -1,8 +1,10 @@
+![logo-banner-website](https://github.com/user-attachments/assets/92577b6c-d1b4-4364-888c-6dfb459177ed)
 # Artic Network RAMPART NextFlow wrapper
+
 
 Run the ARTIC RAMPART real-time nanopore analysis application from within Epi2Me or NextFlow
 
-Open a browser to [http://localhost:2100](http://localhost:2100) to view the RAMPART interface.
+Open a browser to [http://localhost:3000](http://localhost:3000) to view the RAMPART interface.
 
 ## Introduction
 
