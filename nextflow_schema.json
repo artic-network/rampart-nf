@@ -7,6 +7,32 @@
   "type": "object",
   "definitions": {
     "main_options": {
+      "title": "Protocol",
+      "type": "object",
+      "fa_icon": "fas fa-terminal",
+      "description": "Select the protocol for the sequencing run.",
+      "properties": {
+        "protocol": {
+          "type": "string",
+          "default": "MPXV",
+          "title": "Protocol",
+          "enum": [
+            "MPXV"
+          ],
+
+          "description": "Specify the path to the organism protocols.",
+          "help_text": ""
+        }
+      },
+      "required": [
+        "protocol"
+      ]
+    },
+    "input_options": {
+      "title": "Input Options",
+      "type": "object",
+      "fa_icon": "fas fa-terminal",
+      "description": "Define where the pipeline should find input data and save output data.",
       "properties": {
         "protocol": {
           "type": "string",
@@ -36,8 +62,7 @@
         }
       },
       "required": [
-        "fastq",
-        "protocol"
+        "fastq"
       ]
     },
     "output_options": {
