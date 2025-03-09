@@ -6,6 +6,25 @@
   "url": "https://github.com/artic-network/rampart-nf",
   "type": "object",
   "definitions": {
+    "main_options": {
+      "properties": {
+        "protocol": {
+          "type": "string",
+          "default": "MPXV",
+          "title": "Protocol",
+          "enum": [
+            "MPXV"
+          ],
+
+          "description": "Specify the path to the organism protocols.",
+          "help_text": ""
+        }
+      },
+      "required": [
+        "fastq",
+        "protocol"
+      ]
+    },
     "input_options": {
       "title": "Input Options",
       "type": "object",
@@ -26,16 +45,6 @@
           "description": "A CSV file specifying names associated with each barcode",
           "help_text": ""
 
-        },
-        "protocol": {
-          "type": "string",
-          "title": "Protocol",
-          "enum": [
-            "MPXV"
-          ],
-
-          "description": "Specify the path to the organism protocols.",
-          "help_text": ""
         }
       },
       "required": [
