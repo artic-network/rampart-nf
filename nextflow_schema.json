@@ -18,19 +18,7 @@
 
           "description": "Specify the path to the organism protocols.",
           "help_text": ""
-        }
-      },
-      "required": [
-        "fastq",
-        "protocol"
-      ]
-    },
-    "input_options": {
-      "title": "Input Options",
-      "type": "object",
-      "fa_icon": "fas fa-terminal",
-      "description": "Define where the pipeline should find input data and save output data.",
-      "properties": {
+        },
         "fastq": {
           "type": "string",
           "format": "path",
