@@ -1,6 +1,6 @@
 process rampart {
 
-  container "${params.wf.container}:1.2.2b"
+  container "${params.wf.container}"
   
   publishDir "${params.out_dir}", mode: 'copy'
 
